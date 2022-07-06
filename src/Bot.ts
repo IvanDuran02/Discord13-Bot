@@ -1,8 +1,9 @@
 import { Client, ClientOptions, MessageEmbed } from "discord.js";
 import ready from "./listeners/ready";
 import interactionCreate from "./listeners/interactionCreate";
-
-const token = "ODE3MDg4Mzk0ODU2NzU5MzY3.YEEa3g.o2g_k3tHuFtfy9X17PF-2lmf8tk"; // add your token here
+import dotenv from "dotenv";
+dotenv.config();
+const token = process.env.TOKEN; // add your token here
 
 console.log("Bot is starting...");
 
